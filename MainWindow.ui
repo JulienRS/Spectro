@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowSpectro</class>
+ <widget class="QMainWindow" name="MainWindowSpectro">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1829</width>
+    <height>1017</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1200</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>3000</width>
+    <height>1500</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>1771</width>
+      <height>921</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1800</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>10</y>
+       <width>231</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Calculation Tools</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>214</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="pushButtonNormalization">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255,220,250)</string>
+         </property>
+         <property name="text">
+          <string>Normalization</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="pushButtonDiffOrAdd">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(190,230,255)</string>
+         </property>
+         <property name="text">
+          <string>(+) or (-)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="pushButtonPivotal">
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255,240,190)</string>
+         </property>
+         <property name="text">
+          <string>Pivotal</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="pushButtonClearPlot">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(230,230,230)</string>
+         </property>
+         <property name="text">
+          <string>Clear Plot</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>231</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Experiment Control</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>23</y>
+        <width>204</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="pushButtonSingleShot">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(230,230,230)</string>
+         </property>
+         <property name="text">
+          <string>Single shot</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="pushButtonStartAcquisition">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(230,230,230)</string>
+         </property>
+         <property name="text">
+          <string>Start Acquisition</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="pushButtonRepeat10Hz">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(230,230,230)</string>
+         </property>
+         <property name="text">
+          <string>Repeat 10Hz</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="pushButtonSequence">
+         <property name="maximumSize">
+          <size>
+           <width>500</width>
+           <height>500</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(230,230,230)</string>
+         </property>
+         <property name="text">
+          <string>Sequence</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="pushButtonShutterClosed">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(230,230,230)</string>
+         </property>
+         <property name="text">
+          <string>Shutter closed</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="pushButtonLaserControl">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(230,230,230)</string>
+         </property>
+         <property name="text">
+          <string>Laser Control</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="PlotWidget" name="displayGraph">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>181</y>
+       <width>1200</width>
+       <height>680</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>1200</width>
+       <height>600</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>1600</width>
+       <height>680</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="geometry">
+      <rect>
+       <x>1230</x>
+       <y>10</y>
+       <width>531</width>
+       <height>851</height>
+      </rect>
+     </property>
+     <property name="tabShape">
+      <enum>QTabWidget::Rounded</enum>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <property name="elideMode">
+      <enum>Qt::ElideNone</enum>
+     </property>
+     <widget class="QWidget" name="Experiment">
+      <attribute name="title">
+       <string>Experiment</string>
+      </attribute>
+      <widget class="QTableWidget" name="tableWidgetExperiment">
+       <property name="geometry">
+        <rect>
+         <x>105</x>
+         <y>120</y>
+         <width>415</width>
+         <height>690</height>
+        </rect>
+       </property>
+       <property name="rowCount">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEditDisplayMetadata">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>500</width>
+         <height>90</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="Calculation">
+      <attribute name="title">
+       <string>Calculation</string>
+      </attribute>
+      <widget class="QTextEdit" name="textEdit">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>500</width>
+         <height>90</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tableWidgetCalculation">
+       <property name="geometry">
+        <rect>
+         <x>105</x>
+         <y>120</y>
+         <width>415</width>
+         <height>690</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="pushButtonCreateUser">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>30</y>
+       <width>161</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Create new user</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditDisplayCurrentUser">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>890</y>
+       <width>110</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>890</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Current user is :</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1829</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionCreateFile"/>
+    <addaction name="actionOpenFile"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuLoadUserParameter">
+    <property name="title">
+     <string>Load user's parameter</string>
+    </property>
+    <addaction name="actionChooseUserParameter"/>
+   </widget>
+   <widget class="QMenu" name="menuLoad_experiment">
+    <property name="title">
+     <string>Load experiment</string>
+    </property>
+    <addaction name="actionLoad"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuLoad_experiment"/>
+   <addaction name="menuLoadUserParameter"/>
+  </widget>
+  <action name="actionOpenFile">
+   <property name="text">
+    <string>Open File</string>
+   </property>
+  </action>
+  <action name="actionCreateFile">
+   <property name="text">
+    <string>Create File</string>
+   </property>
+  </action>
+  <action name="actionChooseUserParameter">
+   <property name="text">
+    <string>Choose user's name</string>
+   </property>
+  </action>
+  <action name="actionLoad">
+   <property name="text">
+    <string>Load</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionCreateUser">
+   <property name="text">
+    <string>Create User</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PlotWidget</class>
+   <extends>QGraphicsView</extends>
+   <header>pyqtgraph.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
